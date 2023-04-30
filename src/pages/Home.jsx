@@ -1,5 +1,5 @@
 import React from 'react'
-import Middle from '../components/Middle'
+import Accordion from '../components/Accordion'
 import Header from '../components/Header'
 import SearchForm from '../components/SearchForm'
 
@@ -8,7 +8,7 @@ const Home = () => {
         <>
             <Header/>
             <SearchForm/>
-            <Middle/>
+            <Accordion/>
         </>
     )
 }
