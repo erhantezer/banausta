@@ -8,7 +8,6 @@ const SearchForm = () => {
                 {/* <label className="form-label" for="form1">Search</label> */}
             </div>
             <button type="button" className="btn btn-danger">
-                <i className="fas fa-search"></i>
                 SUBMIT
             </button>
         </div>

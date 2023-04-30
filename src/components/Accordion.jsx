@@ -3,7 +3,10 @@ import React from 'react'
 const Accordion = () => {
     return (
         
-        <div className="accordion container" id="accordionExample">
+        <div className="accordion container mb-5 mt-5 " id="accordionExample">
+            <div className='mb-5' >
+                <h2 style={{ fontSize: "3rem" }}>Sıkça Sorulan Sorular</h2>
+            </div>
             <div className="accordion-item">
                 <h2 className="accordion-header" id="headingOne">
                     <button className="accordion-button collapsed fs-5 fw-normal text-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">

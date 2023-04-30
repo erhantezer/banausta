@@ -14,7 +14,7 @@ const Navbar = () => {
     console.log(currentUser)
 
     return (
-        <nav  className="navbar navbar-expand-lg bg-primary " >
+        <nav className="navbar navbar-expand-lg " style={{ backgroundColor: "#003581" }}>
             <div className="container-fluid" style={{ display: "flex" }}>
                 <Link style={{ color: "darkblue", flexGrow: "24" }} className="navbar-brand  ms-3" to="/">
                     <h2 className="text-white banausta" style={{ fontFamily:'Bungee Inline'}}>banausta</h2>
