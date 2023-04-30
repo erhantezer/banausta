@@ -1,12 +1,10 @@
 import * as React from 'react';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import { Link } from 'react-router-dom';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -76,7 +74,7 @@ export default function Register() {
 
     return (
         <ThemeProvider theme={theme} >
-            <Container component="main" maxWidth="xs">
+            <Container component="main" maxWidth="xs" sx={{ marginTop:"6rem" }}>
                 <CssBaseline />
                 <Box
                     sx={{
@@ -86,9 +84,7 @@ export default function Register() {
                         alignItems: 'center',
                     }}
                 >
-                    <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-                        <LockOutlinedIcon />
-                    </Avatar>
+                    
                     <Typography component="h1" variant="h5">
                         Sign up
                     </Typography>
@@ -151,12 +147,7 @@ export default function Register() {
                                     onChange={(e) => setPassword(e.target.value)}
                                 />
                             </Grid>
-                            <Grid item xs={12} sx={{ textAlign: 'center' }}>
-                                <Button variant="contained" component="label">
-                                    Upload image
-                                    <input hidden accept="image/*" multiple type="file" onChange={(e) => setImage(e.target.value)} />
-                                </Button>
-                            </Grid>
+                            
                         </Grid>
                         <Button
                             type="submit"
