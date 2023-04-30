@@ -2,11 +2,11 @@ import React from 'react'
 
 const Middle = () => {
     return (
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
+        <div className="accordion accordion-flush" id="accordionFlushExample">
+            <div className="accordion-item">
+                <h2 className="accordion-header" id="flush-headingOne">
                     <button
-                        class="accordion-button collapsed"
+                        className="accordion-button collapsed"
                         type="button"
                         data-mdb-toggle="collapse"
                         data-mdb-target="#flush-collapseOne"
@@ -18,11 +18,11 @@ const Middle = () => {
                 </h2>
                 <div
                     id="flush-collapseOne"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="flush-headingOne"
                     data-mdb-parent="#accordionFlushExample"
                 >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
                         richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
                         brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
@@ -34,10 +34,10 @@ const Middle = () => {
                     </div>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwo">
+            <div className="accordion-item">
+                <h2 className="accordion-header" id="flush-headingTwo">
                     <button
-                        class="accordion-button collapsed"
+                        className="accordion-button collapsed"
                         type="button"
                         data-mdb-toggle="collapse"
                         data-mdb-target="#flush-collapseTwo"
@@ -49,11 +49,11 @@ const Middle = () => {
                 </h2>
                 <div
                     id="flush-collapseTwo"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="flush-headingTwo"
                     data-mdb-parent="#accordionFlushExample"
                 >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
                         richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
                         brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
@@ -65,10 +65,10 @@ const Middle = () => {
                     </div>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
+            <div className="accordion-item">
+                <h2 className="accordion-header" id="flush-headingThree">
                     <button
-                        class="accordion-button collapsed"
+                        className="accordion-button collapsed"
                         type="button"
                         data-mdb-toggle="collapse"
                         data-mdb-target="#flush-collapseThree"
@@ -80,11 +80,11 @@ const Middle = () => {
                 </h2>
                 <div
                     id="flush-collapseThree"
-                    class="accordion-collapse collapse"
+                    className="accordion-collapse collapse"
                     aria-labelledby="flush-headingThree"
                     data-mdb-parent="#accordionFlushExample"
                 >
-                    <div class="accordion-body">
+                    <div className="accordion-body">
                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
                         richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
                         brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,

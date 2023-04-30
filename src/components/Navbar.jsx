@@ -1,27 +1,48 @@
-import React from 'react'
+import { Link, useNavigate } from "react-router-dom"
+
 
 const Navbar = () => {
+    const navigate = useNavigate()
+
+    const handleLogout = () => {
+        sessionStorage.removeItem("user")
+        navigate("/")
+    }
+
+
+    const currentUser = JSON.parse(sessionStorage.getItem("user"))
+    console.log(currentUser)
+
     return (
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+        <nav style={{ backgroundColor: "lightgrey" }} className="navbar navbar-expand-lg" >
+            <div className="container-fluid" style={{ display: "flex" }}>
+                <Link style={{ color: "darkblue", flexGrow: "24" }} className="navbar-brand fs-3 fw-bold ms-3" to="/home">
+                    <img src="alpata.png" className="rounded float-start" style={{ width: 120 }} alt="..." />
+                </Link>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
-                        </li>
+                <div className="collapse navbar-collapse" id="navbarText">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0 fw-bolder">
+                        {currentUser ? (
+                            <>
+                                <li className="nav-item ">
+                                    <Link className="nav-link active me-2" aria-current="page" to="/home">Home</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link active" aria-current="page" to="/" onClick={handleLogout}>Logout</Link>
+                                </li>
+                            </>
+                        ) : (
+                            <>
+                                <li className="nav-item">
+                                    <Link className="nav-link me-2" to="/login">Login</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/register">Register</Link>
+                                </li>
+                            </>
+                        )}
                     </ul>
                 </div>
             </div>

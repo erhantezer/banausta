@@ -3,8 +3,11 @@ import { Outlet, createBrowserRouter } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import NotFound from "../pages/NotFound";
 import Home from "../pages/Home";
+import Footer from "../components/Footer";
+import Login from "../pages/Login";
+import Register from "../pages/Register";
 
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
     {
         element: (
             <>
@@ -21,12 +24,12 @@ const router = createBrowserRouter([
                 element: <Home />
             },
             {
-                path: "about",
-                element: <About />
+                path: "login",
+                element: <Login />
             },
             {
-                path: "contact",
-                element: <Contact />
+                path: "register",
+                element: <Register />
             },
             
         ]
