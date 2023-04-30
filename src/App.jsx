@@ -1,12 +1,13 @@
-import Home from "./pages/Home"
+import { RouterProvider } from "react-router-dom";
+import router from "./router/router";
 
 function App() {
 
   return (
     <>
-      <Home />
+      <RouterProvider router={router} fallbackElement = {<div>Loading...</div>}/>
     </>
   )
 }
 
-export default App
+export default App;
